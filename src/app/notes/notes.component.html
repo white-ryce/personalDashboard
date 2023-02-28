@@ -1,0 +1,15 @@
+<div class="notesWrapper">
+    <div class="container">
+
+        <div class="notesList">
+
+            <app-noteccard *ngFor = "let note of notes" [note]="note"></app-noteccard>
+            <div class="buttonsContainer buttonsCentered">
+                <a routerLink = "add" class = "btn add-btn">
+                    <i class="material-icons-outlined">add</i>
+                    Add
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

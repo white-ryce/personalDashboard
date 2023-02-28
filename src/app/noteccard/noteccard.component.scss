@@ -1,0 +1,26 @@
+.noteCard
+{
+    background-color: rgba(black,.7);
+    color:rgba(white,.9);
+    padding: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.1s;
+
+    &:hover
+    {
+        background-color: rgba(black,.8);
+        backdrop-filter: blur(2px);
+    }
+}
+
+.noteCardTitle
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.noteCardContent
+{
+    margin-top: 7px;
+}

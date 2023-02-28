@@ -1,0 +1,78 @@
+.todoWrapper 
+{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.todoItem 
+{
+    display: flex;
+    background-color: rgba(black, .5);
+    align-items: center;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    //Padding: first number top bottom, second is left right
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.todoItem:hover 
+{
+    .todoText 
+    {
+        color: white;
+    }
+
+    .checkBox 
+    {
+        border-color: transparent;
+        background-color: rgba(white, .35);
+    }
+}
+
+.todoText 
+{
+    color: rgba(white, .7);
+}
+
+.checkBox 
+{
+    display: flex;
+    padding: 4px;
+    border: 2px solid rgba(white, .35);
+    border-radius: 50%;
+    margin-right: 15px;
+
+
+    i {
+        font-size: 18px;
+        opacity: 0;
+    }
+}
+
+.todoItem.completed
+{
+    .todoText
+    {
+        text-decoration: line-through;
+        text-decoration-color: rgba(white, .9);
+        transform: scaleX(1);
+    }
+
+    .checkBox
+    {
+        background: #B2D2A4;
+        border: transparent;
+
+        i
+        {
+            opacity: 1;
+        }
+    }
+   
+}
+
+.todoText,.checkBox
+{
+    transition: 0.1s;
+}

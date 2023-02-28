@@ -1,0 +1,67 @@
+.app-wrapper
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    //background-image: url();
+    background-image: url(../media/IMG_8517.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.topSection
+{
+    //background-color: aquamarine;
+    text-align: center;
+    padding: 30px 0;
+    /* flex-grow: 1; */
+
+    h1
+    {
+        font-size: 120px;
+        font-weight: bold;
+
+        //Darker background textstyle
+        //color: #f5f5f5;
+
+        //Lighter background textstyle
+        color: black;
+        opacity: .7;
+        text-shadow: 0px 1px 7px rgba(black,0.12);
+    }
+
+    h2
+    {
+        font-size: 28px;
+        //Darker background textstyle
+        //color: white;
+
+        //Lighter background textstyle
+        color: black;
+        opacity: .7;
+
+        text-shadow: 0px 1px 4px rgba(black,0.1);
+    }
+}
+
+.contentSection
+{
+    //background-color: cadetblue;
+    flex-grow: 1;
+    min-height: 0;
+}
+
+.bottomSection
+{
+    //background-color: skyblue;
+    display: flex;
+    app-tabs
+    {
+        margin: auto;
+    }
+}
+
